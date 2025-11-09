@@ -49,3 +49,7 @@
 body {
   @apply font-body;
 }
+
+.wrapper {
+  @apply container px-6 mx-auto;
+}
