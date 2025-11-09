@@ -48,7 +48,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-end w-full">
+        <div className="flex items-end justify-end w-full">
           <UnsplashImg
           className='max-sm:w-full w-xl rounded-box overflow-hidden'
             author={"Md Mehedi"}
