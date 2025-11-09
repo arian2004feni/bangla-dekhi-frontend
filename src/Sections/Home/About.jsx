@@ -9,6 +9,7 @@ const About = () => {
         <div className="space-y-20">
           <div>
             <UnsplashImg
+              className="rounded-box overflow-hidden"
               author={"Mamun Srizon"}
               authorId={
                 "https://unsplash.com/@mamunsrizon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -49,7 +50,7 @@ const About = () => {
         </div>
         <div className="flex items-end w-full">
           <UnsplashImg
-          className='max-sm:w-full w-xl'
+          className='max-sm:w-full w-xl rounded-box overflow-hidden'
             author={"Md Mehedi"}
             authorId={
               "https://unsplash.com/@mahdi17?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyTextv"
