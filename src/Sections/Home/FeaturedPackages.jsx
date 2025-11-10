@@ -109,19 +109,22 @@ const FeaturedPackages = () => {
     <section className="wrapper py-20">
       <div className="mb-12">
         <div>
-          <p className="mb-2">Tour Packages</p>
+          <p className="mb-2 font-bold">Tours</p>
           <h2 className="text-5xl font-heading font-bold mb-4">
             Curated travel experiences
           </h2>
-          <p className="text-sm text-gray-500">
+          <p className="text-gray-500">
             Top hand-picked, bookable tours across Bangladesh.
           </p>
         </div>
       </div>
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+      <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {PACKAGES.map((pkg) => (
           <PackageCard pkg={pkg} key={pkg?.id} />
         ))}
+      </div>
+      <div className="text-center mt-12">
+        <button className="btn text-base btn-accent">View More</button>
       </div>
     </section>
   );

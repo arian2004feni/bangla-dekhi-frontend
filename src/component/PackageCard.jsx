@@ -8,7 +8,7 @@ import { Link } from "react-router";
 const PackageCard = ({ pkg }) => {
   const { title, location, price, duration, rating, img, guide } = pkg || {};
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <div className="card bg-base-100">
       <figure className="px-4 pt-4 overflow-hidden relative">
         <img
           src={img || "Images/Home/about-1.png"}
