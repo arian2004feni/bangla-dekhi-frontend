@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import AuthNavs from "../AuthNavs";
 
 const Navbar = () => {
   const navs = (
@@ -42,9 +43,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navs}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
+      <AuthNavs />
     </nav>
   );
 };
