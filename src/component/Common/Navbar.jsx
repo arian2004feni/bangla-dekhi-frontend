@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
 import AuthNavs from "../AuthNavs";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
+  const { openAuthModal } = useAuth();
   const navs = (
     <>
       <li>
@@ -43,7 +45,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navs}</ul>
       </div>
-      <AuthNavs />
+      <AuthNavs openAuthModal={openAuthModal} />
     </nav>
   );
 };

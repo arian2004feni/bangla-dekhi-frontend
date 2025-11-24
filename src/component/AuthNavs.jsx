@@ -1,9 +1,14 @@
 import React from "react";
 
-const AuthNavs = () => {
+const AuthNavs = ({openAuthModal}) => {
   return (
     <div className="navbar-end">
-      <a className="btn">Button</a>
+      <button
+        className="btn"
+        onClick={openAuthModal}
+      >
+        Login
+      </button>
     </div>
   );
 };
